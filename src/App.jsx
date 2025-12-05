@@ -27,7 +27,7 @@ function App() {
 
   const downloadResume = () => {
     const a = document.createElement("a");
-    a.href = "/resume.pdf";
+    a.href = "/varoon_resume.pdf";
     a.download = "Varoon_Kumar_Resume.pdf";
     a.click();
   };
