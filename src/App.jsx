@@ -17,12 +17,12 @@ import {
 
 function App() {
   const techIcons = [
-    { icon: Code2, size: "w-10 h-10 sm:h-12 sm:w-12", top: "-5%", left: "50%", color: "text-cyan-500"},
-    { icon: FileJson, size: "w-10 h-10 sm:h-12 sm:w-12", top: "15%", left: "90%", color: "text-red-500"},
-    { icon: Globe, size: "w-10 h-10 sm:h-12 sm:w-12", top: "80%", left: "85%", color: "text-emerald-500"},
-    { icon: Camera, size: "w-10 h-10 sm:h-12 sm:w-12", top: "85%", left: "10%", color: "text-indigo-500" },
+    { icon: Code2, size: "w-10 h-10 sm:h-12 sm:w-12", top: "5%", left: "75%", color: "text-cyan-500"},
+    { icon: FileJson, size: "w-10 h-10 sm:h-12 sm:w-12", top: "48%", left: "95%", color: "text-red-500"},
+    { icon: Globe, size: "w-10 h-10 sm:h-12 sm:w-12", top: "85%", left: "78%", color: "text-emerald-500"},
+    { icon: Camera, size: "w-10 h-10 sm:h-12 sm:w-12", top: "88%", left: "15%", color: "text-indigo-500" },
     { icon: Database, size: "w-10 h-10 sm:h-12 sm:w-12", top: "50%", left: "-5%", color: "text-orange-500" },
-    { icon: Clapperboard, size: "w-10 h-10 sm:h-12 sm:w-12", top: "8%", left: "10%", color: "text-purple-500" },
+    { icon: Clapperboard, size: "w-10 h-10 sm:h-12 sm:w-12", top: "5%", left: "12%", color: "text-purple-500" },
   ];
 
   const downloadResume = () => {
@@ -59,10 +59,10 @@ function App() {
       <div className="absolute inset-0 bg-image z-0"></div>
 
       {/* MAIN ORBIT CONTAINER */}
-      <div className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] mx-auto select-none mb-8 z-10">
+      <div className="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] mx-auto select-none mb-8 z-10">
 
         {/* Orbit Circle */}
-        <div className="absolute border border-dashed border-gray-300 dark:border-zinc-600 rounded-full w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] hover:scale-110 transition-all top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute border border-dashed border-gray-300 dark:border-zinc-600 rounded-full w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] hover:scale-110 transition-all top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         
 
         {/* FLOATING ICONS AROUND THE ORBIT */}
@@ -85,7 +85,7 @@ function App() {
 
         {/* Center Avatar */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 cursor-pointer">
-          <div className="relative hover:scale-110 transition-all w-44 h-44 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-xl border-4 border-white dark:border-[#2f2f2f]">
+          <div className="relative hover:scale-110 transition-all w-44 h-44 sm:w-72 sm:h-72 rounded-full overflow-hidden shadow-xl border-4 border-white dark:border-[#2f2f2f]">
             <img
               src="/me.webp"
               alt="Avatar"
@@ -97,11 +97,11 @@ function App() {
 
       {/* Content Section */}
       <div className="text-center space-y-4 z-10">
-        <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 dark:text-white tracking-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white tracking-tight">
           Hey, I'm Varoon Kumar
         </h1>
 
-        <p className="text-lg sm:text-2xl text-gray-600 dark:text-gray-300 font-medium">
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 font-medium">
           Full Stack Developer & Video Editor
         </p>
 
@@ -110,29 +110,33 @@ function App() {
           <a
             href="https://github.com/varoonk21"  target="_blank"
             className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition transform hover:scale-110"
+            title="GitHub"
           >
-            <Github className="w-6 h-6 sm:h-10 sm:w-10" />
+            <Github className="w-6 h-6 sm:h-8 sm:w-8" />
           </a>
 
           <a
             href="https://www.linkedin.com/in/varoonk21/"  target="_blank"
             className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition transform hover:scale-110"
+            title="LinkedIn"
           >
-            <Linkedin className="w-6 h-6 sm:h-10 sm:w-10" />
+            <Linkedin className="w-6 h-6 sm:h-8 sm:w-8" />
           </a>
 
           <a
             href="https://www.instagram.com/varunkinsights/"  target="_blank"
             className="text-gray-500 hover:text-pink-600 dark:text-gray-400 dark:hover:text-pink-400 transition transform hover:scale-110"
+            title="Instagram"
           >
-            <InstagramIcon className="w-6 h-6 sm:h-10 sm:w-10" />
+            <InstagramIcon className="w-6 h-6 sm:h-8 sm:w-8" />
           </a>
 
           <a
             href="mailto:varoonk21@gmail.com"  target="_blank"
             className="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition transform hover:scale-110"
+            title="Mail Me"
           >
-            <Mail className="w-6 h-6 sm:h-10 sm:w-10" />
+            <Mail className="w-6 h-6 sm:h-8 sm:w-8" />
           </a>
 
           <a
@@ -142,14 +146,14 @@ function App() {
             className="text-gray-500 hover:text-green-600 dark:text-gray-400 dark:hover:text-green-400 transition transform hover:scale-110"
             title="Portfolio"
           >
-            <FolderOpen className="w-6 h-6 sm:h-10 sm:w-10" />
+            <FolderOpen className="w-6 h-6 sm:h-8 sm:w-8" />
           </a>
         </div>
 
         {/* Resume Button */}
-        <div className="pt-4">
+        <div className="pt-3">
           <button
-            className="group flex items-center gap-2 mx-auto px-6 py-2.5 sm:px-10 sm:py-5 bg-gray-900 text-lg sm:text-2xl hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-gray-900 rounded-full cursor-pointer font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
+            className="group flex items-center gap-2 mx-auto px-6 py-2.5 sm:px-8 sm:py-4 bg-gray-900 text-lg sm:text-xl hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-gray-900 rounded-full cursor-pointer font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
             onClick={downloadResume}
           >
             <FileText className="w-6 h-6 group-hover:scale-110 transition-transform" />
