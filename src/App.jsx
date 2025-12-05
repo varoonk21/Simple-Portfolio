@@ -68,7 +68,6 @@ function App() {
         {/* FLOATING ICONS AROUND THE ORBIT */}
         {techIcons.map((item, index) => {
           const Icon = item.icon;
-          console.log(item.color);
           return (
                <Icon
               key={index}
